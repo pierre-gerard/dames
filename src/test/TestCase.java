@@ -28,16 +28,4 @@ public class TestCase {
 		Assert.assertEquals(c.distanceAvec(c3), 3);
 		Assert.assertEquals(c.distanceAvec(c4), 4);
 	}
-
-	@Test
-	public void distanceAvec_pasDiagonale() {
-		Case c = new Case(2, 3, Couleur.BLANC);
-
-		Case c1 = new Case(5, 3, Couleur.NOIR);
-		Case c2 = new Case(1, 5, Couleur.NOIR);
-
-		Assert.assertEquals(c.distanceAvec(c), 0);
-		Assert.assertEquals(c.distanceAvec(c1), -1);
-		Assert.assertEquals(c.distanceAvec(c2), -1);
-	}
 }
